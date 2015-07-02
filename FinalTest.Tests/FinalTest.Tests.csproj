@@ -53,9 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\FinalTest\FinalTest.csproj">
       <Project>{324c404c-3ba5-42d9-816f-6726fe983338}</Project>
       <Name>FinalTest</Name>

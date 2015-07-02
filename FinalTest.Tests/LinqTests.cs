@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using NFluent;
 using NUnit.Framework;
 
@@ -112,4 +113,6 @@ namespace FinalTest.Tests
         //    Check.That(quatreNombresSupérieursSuivant3).ContainsExactly(10, 17, 23, 28);
         //}
     }
+
+
 }

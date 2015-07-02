@@ -39,12 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bases\Calculatrice.cs" />
+    <Compile Include="Bases\IOperation.cs" />
+    <Compile Include="Bases\Multiplication.cs" />
+    <Compile Include="Bases\Somme.cs" />
+    <Compile Include="Bases\TypeReference.cs" />
     <Compile Include="Bases\TypeValeur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Linq\" />
     <Folder Include="Patterns\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bases\packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,4 @@
-﻿namespace FinalTest.Tests
+﻿namespace FinalTest.Bases
 {
     public struct TypeValeur
     {
