@@ -8,7 +8,7 @@ namespace FinalTest.Tests
     public class BasesCSharpTests
     {
         [Test]
-        public void CeTestDoitPasserSiEnvironnementOK()
+        public void CeTestDoitPasserSiEnvironnementOk()
         {
             Check.That(true).IsTrue();
         }
