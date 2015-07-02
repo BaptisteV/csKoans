@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace FinalTest.Tests
@@ -15,7 +17,7 @@ namespace FinalTest.Tests
 
         public IEnumerable<int> NombresPairs
         {
-            get { return from pair in _keyValuePairs where pair.Value%2 == 0 select pair.Value;}
+            get { return _keyValuePairs.Where(pair => pair.Value%2 == 0).Select(pair => pair.Value);}
         }
 
         private bool Paire(int num)
@@ -30,6 +32,15 @@ namespace FinalTest.Tests
                 return _keyValuePairs.OrderBy(x => x.Value).Where(number => !Paire(number.Value))
                     .Select(pair => pair.Key).Aggregate((i, j) => i + ", " + j);
             }
+        }
+
+        public string PremierNombreDontLeTexteContientPlusDe5Caractères {
+            get { return _keyValuePairs.First(pair => pair.Key.Length > 5).Key; }
+        }
+
+        public IEnumerable<int> QuatreNombresSupérieursSuivant3
+        {
+            get { return _keyValuePairs.OrderBy(pair => pair.Value).SkipWhile(pair => (pair.Value <= 3)).Select(pair => pair.Value).Take(4); }
         }
     }
 }
