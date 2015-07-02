@@ -1,13 +1,11 @@
-using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 
-namespace FinalTest.Tests
+namespace FinalTest.Linq
 {
     public class Nombres
     {
-        private IEnumerable<KeyValuePair<string, int>> _keyValuePairs;
+        private readonly IEnumerable<KeyValuePair<string, int>> _keyValuePairs;
 
 
         public Nombres(IEnumerable<KeyValuePair<string, int>> keyValuePairs)
@@ -28,7 +26,7 @@ namespace FinalTest.Tests
         public string TexteNombresImpairs
         {
             get
-            {
+            { 
                 return _keyValuePairs.OrderBy(x => x.Value).Where(number => !Paire(number.Value))
                     .Select(pair => pair.Key).Aggregate((i, j) => i + ", " + j);
             }

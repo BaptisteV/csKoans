@@ -45,12 +45,16 @@
     <Compile Include="Bases\Somme.cs" />
     <Compile Include="Bases\TypeReference.cs" />
     <Compile Include="Bases\TypeValeur.cs" />
+    <Compile Include="Linq\Nombres.cs" />
+    <Compile Include="Patterns\CompteBancaire.cs" />
+    <Compile Include="Patterns\CompteCréé.cs" />
+    <Compile Include="Patterns\DépotRéalisé.cs" />
+    <Compile Include="Patterns\IEvenementMetier.cs" />
+    <Compile Include="Patterns\Montant.cs" />
+    <Compile Include="Patterns\RetraitRéalisé.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Linq\" />
-    <Folder Include="Patterns\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Bases\packages.config" />
   </ItemGroup>

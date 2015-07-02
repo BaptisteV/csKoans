@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="BasesCSharpTests.cs" />
     <Compile Include="LinqTests.cs" />
-    <Compile Include="Nombres.cs" />
     <Compile Include="PatternsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
